@@ -1,0 +1,6 @@
+include ':app'
+include 'bridge'
+project(':bridge').projectDir = new File('../../Library/android/bridge')
+include 'shell'
+project(':shell').projectDir = new File('../../Library/android/shell')
+rootProject.name='SampleApp'
