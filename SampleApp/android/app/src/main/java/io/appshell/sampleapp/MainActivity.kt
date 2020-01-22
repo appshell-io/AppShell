@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
+import io.appshell.shell.web.WebActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         rv_main.layoutManager = LinearLayoutManager(this)
         rv_main.adapter = ItemsAdapter(this, listOf(
             Item(R.drawable.icon_h5, "WebView") {
-                startActivity(Intent(this, FullscreenWebActivity::class.java))
+                startActivity(Intent(this, WebActivity::class.java))
             },
             Item(R.drawable.icon_react, "React Native") {
 
